@@ -1,0 +1,124 @@
+body{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#head{
+  background-image: url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.537);
+  background-blend-mode: multiply;
+}
+/* div that containes h1 */
+.outline{
+  text-shadow: 2px 7px 10px black;
+  position: absolute;
+  left: 50%;
+  top: 15%;
+  transform: translateX(-45%);
+  animation-name: header;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+/* animation for h1 */
+@keyframes header {
+  from{
+transform: translateX(100%);
+  }
+  to{
+    transform: translateX(-45%);
+  }
+}
+
+.vid-section {
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-38% , -30%);
+  animation-name: v-library;
+  animation-duration: 25s;
+  animation-iteration-count: 1;
+  opacity: 0; 
+}
+/* animation for video */
+@keyframes v-library {
+  0% {
+    opacity: 0; 
+  }
+  20% {
+    opacity: 1; 
+  }
+  100% {
+    opacity: 1; 
+  }
+}
+
+.icon{
+  position: absolute;
+  left: 18%;
+  top: 20%;
+  transform: translateX(-50% ); 
+  animation-name: icon;
+  animation-duration: 1s;
+  animation-iteration-count: 7;
+  opacity: 0;
+  animation-delay: 25s;
+}
+
+@keyframes icon {
+  0% {
+    opacity: 1; 
+    top: 20%;
+  }
+  50%{
+    opacity: 1;
+    top: 25%;
+  }
+  100% {
+    opacity: 1; 
+    top: 20%;
+  }
+}
+
+/* div that containes the book button */
+.book {
+  width: 250px;
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  transform: translate(-25% , -54%); 
+}
+/* the book button */
+.book button{
+  width: 49px;
+  height: 150px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: multiply;
+  background-image: url(../imgs/button-img.jpeg);
+  transition: all 0.5s;
+}
+.book button:hover{
+  transform: scale(1.1);
+}
+
+.paper{
+ width: 65%;
+ margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-49% , -30%);
+  box-shadow: 20px 20px 100px black;
+}
+.paper #text{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50% , -30%);
+}
